@@ -1,4 +1,4 @@
-import { Bot, InlineKeyboard, webhookCallback } from "grammy";
+import { Bot, webhookCallback } from "grammy";
 import express from "express";
 
 const bot = new Bot(process.env.TELEGRAM_TOKEN || "");
