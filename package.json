@@ -2,7 +2,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/bot.js",
-    "dev": "env-cmd ts-node-dev src/bot.ts",
+    "dev": "env-cmd ts-node-dev src/bot.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.14",
