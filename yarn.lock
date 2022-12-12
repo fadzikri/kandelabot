@@ -9,10 +9,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@grammyjs/types@^2.9.1":
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/@grammyjs/types/-/types-2.9.1.tgz#395d0ec2f13b805b144d7fd8dab9247ac40d5341"
-  integrity sha512-6x2Kj98wm3hcq3YQBhlGrYAuQJu3NAx4OmqnOvbBl/la0TIw/HRpu+AinMfkrgjvxR8KzL5hTWCHSXI6MqAj8Q==
+"@grammyjs/types@^2.10.0":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@grammyjs/types/-/types-2.10.3.tgz#4f944003ba87ac54dfd3ee36daf68bd44ccb685e"
+  integrity sha512-8TG9uiJlPcwFb5fxJ2LdQw0eWKDmHoVYY0vS63vwHb7wJIOmZHPpPfEWKRNtEcc7/e7HHZ5qoxixZ24dPjU3Fg==
 
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.1.0"
@@ -86,10 +86,10 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
-"@types/lodash@^4.14.188":
-  version "4.14.188"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.188.tgz#e4990c4c81f7c9b00c5ff8eae389c10f27980da5"
-  integrity sha512-zmEmF5OIM3rb7SbLCFYoQhO4dGt2FRM9AMkxvA3LaADOF1n8in/zGJlWji9fmafLoNyz+FoL6FE0SLtGIArD7w==
+"@types/lodash@^4.14.191":
+  version "4.14.191"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.191.tgz#09511e7f7cba275acd8b419ddac8da9a6a79e2fa"
+  integrity sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==
 
 "@types/mime@*":
   version "3.0.1"
@@ -507,12 +507,12 @@ glob@^7.1.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-grammy@^1.11.2:
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/grammy/-/grammy-1.11.2.tgz#93716c258529e83cdcc03e11e535887cd1005d1f"
-  integrity sha512-R6NlxOAfd3H4eMBU96ARi/kwZXzc3Z8Pj/g7cxmclPsxSXTHItRkY8eagS1Ol1l/CxCkEvQzHslIE9/dZSrqTQ==
+grammy@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/grammy/-/grammy-1.12.0.tgz#fffb80109731cbd56ccd592cec5aff9dd5e682b6"
+  integrity sha512-/2Mi4MyVPeFXjTd4v3pRK8gb/YdWFbZrj/8HTp5daQyTOx4/U95XFL0Ao+e9hf4XbL7RCOpanXaTL8+UXXcNqw==
   dependencies:
-    "@grammyjs/types" "^2.9.1"
+    "@grammyjs/types" "^2.10.0"
     abort-controller "^3.0.0"
     debug "^4.3.4"
     node-fetch "^2.6.7"
@@ -967,10 +967,10 @@ type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-typescript@^4.8.4:
-  version "4.8.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.4.tgz#c464abca159669597be5f96b8943500b238e60e6"
-  integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
+typescript@^4.9.4:
+  version "4.9.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.4.tgz#a2a3d2756c079abda241d75f149df9d561091e78"
+  integrity sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
