@@ -21,7 +21,7 @@ bot.command("start", (ctx) => {
   { parse_mode: "HTML", disable_web_page_preview: true });
 });
 
-bot.command("776bd4ec6f8e9c3e99c20b7336b7db14", async (ctx) => {
+/*bot.command("776bd4ec6f8e9c3e99c20b7336b7db14", async (ctx) => {
   const dataBatch = await Utils.getAllCurrentVersion();
 
   let time = 0;
@@ -38,6 +38,7 @@ bot.command("776bd4ec6f8e9c3e99c20b7336b7db14", async (ctx) => {
     time += 5000;
   })
 });
+*/
 
 bot.command("8ea11f02aed17f9a4da448bd02516fc5", (ctx) => {
   ctx.reply(`Last Post in API`)
