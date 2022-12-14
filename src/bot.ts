@@ -14,14 +14,26 @@ bot.command("start", (ctx) => {
 
   const name = Utils.userTelegram(dataUser);
 
-  ctx.reply(`Hello ${name}, I am a bot post for ${myChannel}.`+
+  ctx.reply(`Hello ${name}, I am a bot post for ${myChannel}. `+
   `I don't have any instructions/commands to do somethings except `+
   `only for post new kernel version to that channel.`,
   { parse_mode: "HTML", disable_web_page_preview: true });
 });
 
-bot.command("hi", (ctx) => {
-  ctx.reply(`Last Post in API`)
+bot.command("last_kernel", async (ctx) => {
+  if (ctx.from?.id !== Number(process.env.ID_OWNER)) {
+    return ctx.reply("Sorry, you have found my owner secret command, but you are not have authorization to that action.")
+  }
+
+  const dataBatch = await Utils.getAllKernelVersion();
+  const version = dataBatch[dataBatch.length-1].version;
+  let summary = dataBatch[dataBatch.length-1].summary;
+
+  if (!summary) summary = `<i>No summary</i>`;
+
+  const text = `Kernel Version : ${version}\nSummary : ${summary}`;
+
+  ctx.api.sendMessage(Number(process.env.ID_CHANNEL), text, { parse_mode: "HTML" })
 });
 
 bot.api.setMyCommands([
