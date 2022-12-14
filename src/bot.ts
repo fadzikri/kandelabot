@@ -1,7 +1,6 @@
 import { Bot, webhookCallback } from "grammy";
 import express from "express";
 import Utils from "./utils";
-import { execSync } from "child_process";
 
 const bot = new Bot(process.env.TELEGRAM_TOKEN || "");
 
@@ -22,7 +21,7 @@ bot.command("start", (ctx) => {
 });
 
 /*bot.command("776bd4ec6f8e9c3e99c20b7336b7db14", async (ctx) => {
-  const dataBatch = await Utils.getAllCurrentVersion();
+  const dataBatch = await Utils.getAllKernelVersion();
 
   let time = 0;
 
@@ -52,6 +51,12 @@ if (process.env.NODE_ENV === "production") {
   const app = express();
   app.use(express.json());
   app.use(webhookCallback(bot, "express"));
+
+  app.post("last_kernel", (req, res) => {
+    res.json({
+      "message": "Hello World!"
+    })
+  });
 
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {

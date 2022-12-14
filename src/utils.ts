@@ -10,7 +10,7 @@ class Utils {
         return name;
     }
 
-    static getAllCurrentVersion = async () => {
+    static getAllKernelVersion = async () => {
         const { data } = await axios.get("https://kandela.cyclic.app/detail");
         return data.result
     }
