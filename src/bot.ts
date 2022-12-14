@@ -20,26 +20,7 @@ bot.command("start", (ctx) => {
   { parse_mode: "HTML", disable_web_page_preview: true });
 });
 
-/*bot.command("776bd4ec6f8e9c3e99c20b7336b7db14", async (ctx) => {
-  const dataBatch = await Utils.getAllKernelVersion();
-
-  let time = 0;
-
-  dataBatch.forEach(async (dataKernel: DataKernel) => {
-    let summary = dataKernel.summary;
-    if (!dataKernel.summary) summary = `<i>No summary</i>`;
-    const text = `Kernel Version : ${dataKernel.version}\nSummary : ${summary}`;
-    
-    setTimeout(() => { 
-      ctx.api.sendMessage(Number(process.env.ID_CHANNEL), text, { parse_mode: "HTML" })
-    }, time)
-
-    time += 5000;
-  })
-});
-*/
-
-bot.command("8ea11f02aed17f9a4da448bd02516fc5", (ctx) => {
+bot.command("hi", (ctx) => {
   ctx.reply(`Last Post in API`)
 });
 
@@ -51,12 +32,6 @@ if (process.env.NODE_ENV === "production") {
   const app = express();
   app.use(express.json());
   app.use(webhookCallback(bot, "express"));
-
-  app.post("last_kernel", (req, res) => {
-    res.json({
-      "message": "Hello World!"
-    })
-  });
 
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
