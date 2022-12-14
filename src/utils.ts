@@ -5,7 +5,7 @@ class Utils {
     static userTelegram = (dataUser: DataUser) => {
         let name = dataUser.firstName;
         if (dataUser.lastName) name += ` ${dataUser.lastName}`;
-        name = `<a href="tg://user?id='${dataUser.id}'">${name}</a>`
+        name = `<a href="tg://user?id=${dataUser.id}">${name}</a>`
 
         return name;
     }
