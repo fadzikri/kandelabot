@@ -11,7 +11,7 @@ class Utils {
     }
 
     static getAllKernelVersion = async () => {
-        const { data } = await axios.get("https://kandela.cyclic.app/detail");
+        const { data } = await axios.get("https://kandela.vercel.app/detail");
         return data.result
     }
 }
