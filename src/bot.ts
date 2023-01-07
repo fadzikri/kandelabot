@@ -29,6 +29,7 @@ bot.command("last_kernel", async (ctx: any) => {
 bot.api.setMyCommands([
   { command: "start", description: "Show welcome message." },
 ]);
+
 if (process.env.NODE_ENV === "production") {
   const app = express();
   app.use(express.json());
